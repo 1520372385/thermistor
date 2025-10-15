@@ -45,13 +45,29 @@ t = 2c / [-b + √(b² - 4c(a - ln R))] - 273.15
 - **前端**: Streamlit
 - **数据处理**: Pandas, NumPy
 - **数学计算**: Python math库
+- **Excel支持**: openpyxl
 
 ## 部署
 
 此应用可以部署到Streamlit Cloud：
+
+### 本地运行
 ```
 streamlit run resistant.py
 ```
+
+### Streamlit Cloud部署
+1. 确保仓库中包含 `requirements.txt` 文件
+2. 在Streamlit Cloud中连接您的GitHub仓库
+3. 设置主文件路径为 `resistant.py`
+4. 部署后Streamlit会自动安装所有依赖
+
+### 依赖要求
+应用需要以下Python包：
+- streamlit>=1.28.0
+- pandas>=1.5.0
+- numpy>=1.21.0
+- openpyxl>=3.0.0 (用于Excel文件支持)
 
 ## 许可证
 
